@@ -288,4 +288,16 @@ function addHistory(expression: string, result: string) {
 .btn-zero {
   grid-column: span 2;
 }
+
+@media (max-width: 700px) {
+  .calculator-wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .calculator {
+    width: min(320px, calc(100vw - 32px));
+  }
+}
 </style>

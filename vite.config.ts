@@ -16,5 +16,6 @@ export default defineConfig({
     environment: 'jsdom',
     globals: true, // pour utiliser les fonctions expect, describe, etc. sans les importer
     include: ['**/*.{test,spec}.{js,ts,jsx,tsx}'],
+    exclude: ['e2e/**', 'node_modules/**', 'dist/**'],
   },
 })
