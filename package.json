@@ -14,7 +14,8 @@
         "test:e2e": "playwright test",
         "test:e2e:ui": "playwright test --ui",
         "test:e2e:report": "playwright show-report",
-        "test:e2e:cucumber": "start-server-and-test dev http://localhost:5173 cucumber-js --require-module tsx --require tests/e2e/steps/**/*.ts --require tests/e2e/support/**/*.ts tests/e2e/features/**/*.feature"
+        "test:e2e:cucumber": "start-server-and-test dev http://localhost:5173 \"cucumber-js\"",
+        "test:e2e:cucumber:report": "en test-results/cucumber-report.html" 
     },
     "dependencies": {
         "vue": "^3.5.13"
